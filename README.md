@@ -12,7 +12,10 @@ This is my first ever project. This was inspired by my friends when they asked m
 ---
 
 ## 🧱 Tech Stack
-- HTML
+- HTML / CSS / JAVASCRIPT
+  (Using Anime.js for animations)
+
+---
 
 ## 📦 Installation:
 - Clone/Download this repository and u are ready to use
