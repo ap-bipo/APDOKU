@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: 'Poppins',sans-serif;
+   display: grid;
+   place-items: center;
+
+    background: #000;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    font-size: 6rem;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+h2 span{
+    transition: 0.5s;
+}
+h2:hover span:nth-child(1)
+{
+    margin-left: 20px;
+}
+h2:hover span:nth-child(2)::after
+{
+    content: "-";
+}
+h2:hover span:nth-child(3)
+{
+    margin-left:20px ;
+}
+h2:hover span
+{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff,
+    0 0 120px #fff,
+    0 0 160px #fff;
+}
+#regis_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 30rem;
+    width: 45rem;
+    margin-top: -50px;
+    border-radius: 30px;
+    background-color: transparent;
+    outline: rgba(252, 252, 252, 0.143) solid 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#regis_form:hover
+{
+    animation: animate 0.5s linear forwards;
+    outline-color: #fff;
+    
+}
+#regis_form label{
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.368);
+}
+#regis_form input{
+    color: #ffffff8c;
+    font-size: 20px;
+    width: 30rem;
+    height: 40px;
+    opacity: 1;
+    outline: none;
+    border: 1px solid ;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: transparent;
+
+}
+#regis_form button{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius:10px ;
+    background-color: rgba(255, 255, 255, 0.564);
+}
+#regis_form button:hover{
+    transform: scale(1.2);
+}
+@keyframes animate {
+    0%{
+
+    }
+    100%
+    {
+        box-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff,
+    0 0 80px #fff; 
+    }
+}
+#expand_button{
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
